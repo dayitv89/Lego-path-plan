@@ -17,14 +17,14 @@
     <script language="javascript" type="text/javascript" src="lib/jquery.colorhelpers.js"></script>
     <script language="javascript" type="text/javascript" src="lib/jquery.flot.js"></script>
     <script language="javascript" type="text/javascript" src="lib/jquery.flot.navigate.js"></script>
-	
+
     <!-- this plugin -->
     <script language="javascript" type="text/javascript" src="lib/jquery.flot.coordinate.js"></script>
     <script type="text/javascript">
 
         $(function () {
             var data = [
-                [[0,0],[0,8],[-18,8],[-18,12],[-11,12],[-11,5],[-17,5],[-17,36],[-8,36],[-8,33],]
+                [[0,0],[0,8],[-18,8],[-18,12],[-11,12],[-11,5],[-17,5],[-17,36],[-8,36],[-8,33],[6,12], [4,8], [4,6] ,[0,0]]
             ];
 
             var options = {
@@ -56,7 +56,7 @@
 
             $(document).ready(function () {
                 $.plot("#canvas-wrapper", data, options);
-                
+
                 $("input[type=radio]").change(function (event) {
                     var values = [];
                     $.each($("input[type=radio]"), function (index, chk) {
@@ -84,11 +84,11 @@
         <div class="demo-container">
             <div id="canvas-wrapper" class="demo-placeholder"></div>
         </div>
-        
-        
+
+
     </div>
 
-    
+
 
 </body>
 </html>
