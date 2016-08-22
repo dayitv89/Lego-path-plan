@@ -5,7 +5,12 @@ It is design for the find sewerage system of the city. Most of the city doesn't 
 
 ![Screenshot](imgs/robo-map-new.png)
 
-It was my college project for fun and minor thesis work. Voila!
+### Component Use
+1. Lego robot module
+1. Ultra sonic sensor
+1. touch sensor
+1. IR sensor
+1. 2x Large motor(theoretically identical, practically not; so map the motor rotation to identically first).
 
 ### Compile & Run
 ```sh
@@ -26,3 +31,5 @@ nxjupload -r SewerageRobot.nxj
 nxjlink -o SewerageRobot.nxj -od SewerageRobot.nxd SewerageRobot
 nxjdebugtool -di SewerageRobot.nxd -c -m 16 29 15
 ```
+
+It was my college project for fun and minor thesis work. Voila!
